@@ -9,4 +9,4 @@ into ~/.zshrc if you do not wish to call the full path of the script.
 Usage:  
 `vimtab [filename]` 
 
-Will add the ability to include options later.
+Does not currently provide support for vim options.
