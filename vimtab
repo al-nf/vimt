@@ -14,11 +14,11 @@ osascript <<EOF
 tell application "iTerm"
 	activate
 	try
-	set newWindow to (create window with default profile)
-	on error
-		tell current session of current window
-			write text "cd '$CWD' && vim '$FILEPATH' && exit"
-		end tell
+		set newWindow to (create window with default profile)
+		on error
+			tell current session of current window
+				write text "cd '$CWD' && vim '$FILEPATH' && exit"
+			end tell
 	end try
 	tell current session of newWindow
 		write text "cd '$CWD' && vim '$FILEPATH' && exit"
