@@ -7,6 +7,4 @@ Add to script folder, then insert the line
 into ~/.zshrc if you do not wish to call the full path of the script.
 
 Usage:  
-`vimt [filename]` 
-
-Does not currently provide support for vim options.
+`vimt [option | filename]`
