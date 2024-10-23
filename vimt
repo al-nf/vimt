@@ -1,0 +1,22 @@
+#!/bin/zsh
+# check if there are arguments
+if [ "$#" -eq 0 ]; then
+	echo "Usage: vimtab <file>"
+	exit 1
+fi
+
+osascript <<EOF
+tell application "iTerm"
+	activate
+	try
+		set newWindow to (create window with default profile)
+		on error
+			tell current session of current window
+				write text "cd $PWD && vim $@ && exit"
+			end tell
+	end try
+	tell current session of newWindow
+		write text "cd $PWD && vim $@ && exit"
+	end tell
+end tell
+EOF
