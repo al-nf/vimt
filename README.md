@@ -1,4 +1,4 @@
-# vimtab
+# vimt
 A simple zsh script for macOS users.  
 Creates a new iTerm2 window and opens a vim instance using given arguments. 
 
@@ -7,6 +7,6 @@ Add to script folder, then insert the line
 into ~/.zshrc if you do not wish to call the full path of the script.
 
 Usage:  
-`vimtab [filename]` 
+`vimt [filename]` 
 
 Does not currently provide support for vim options.
